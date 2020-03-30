@@ -7,4 +7,4 @@ print(a)    #prints (10,11)
 for j in range(0,R):
     a[j] = list(a[j])
 print(a)        #prints((1,0),(1,1))
-print(a[0][0])  #prints 1
+print(a[0][0])  #print 1
