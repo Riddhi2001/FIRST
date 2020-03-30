@@ -5,4 +5,4 @@ for i in range(0,R):
 print(a)
 for j in range(0,R):
     a[j] = list(a[j])
-print()
+print(a)
