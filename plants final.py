@@ -23,4 +23,4 @@ while deaths != temp:
                 n=len(lst)
                 break
 
-print('Number of days after which no plants will die=',count-1)
+print('Number of days after which no plants will die=',count)
