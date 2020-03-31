@@ -20,7 +20,6 @@ while deaths != temp:
                         continue
                 
                 print(lst)
-
                 break
         if temp == deaths:
                 break        
