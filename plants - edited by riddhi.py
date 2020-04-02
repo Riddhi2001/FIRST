@@ -1,6 +1,5 @@
 n = int(input())
 plant = list(map(int,input().split()))
-plant.append(1000)
 count = 0
 dead_plant = []
 len_p = 1
@@ -12,16 +11,16 @@ while True:
     temp = len_p
     for i in range(1,n - len_d_p):
         if plant[i] > plant[i-1]:
-            dead_plant.append(plant[i])
+            dead_plant.append(i)
 
       
     len_d_p += len(dead_plant)
     #print('dead plant on day no.',days,dead_plant,len_d_p) 
 
-    for i in dead_plant: 
+    for i in reversed(dead_plant): 
         try:
         
-            plant.remove(i) 
+            del(plant[i])
         except ValueError:
             pass
     dead_plant.clear()
