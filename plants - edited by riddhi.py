@@ -16,19 +16,19 @@ while True:
 
       
     len_d_p += len(dead_plant)
-    print('dead plant on day no.',days,dead_plant,len_d_p) 
+    #print('dead plant on day no.',days,dead_plant,len_d_p) 
 
     for i in dead_plant: 
-        #try:
-        if i != plant[0]:
+        try:
+        
             plant.remove(i) 
-        #except ValueError:
-            #pass
+        except ValueError:
+            pass
     dead_plant.clear()
     len_p = len(plant)
     if len_p != temp:
         days += 1
     else:
         break
-    print(plant, days)
+print(days)
 
