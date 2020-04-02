@@ -4,20 +4,28 @@ count = 0
 dead_plant = []
 len_p = 1
 len_d_p = 0
+temp = 1
+days = 0
 while True:
-    print('1')
+    
+    temp = len_p
     for i in range(1,n - len_d_p):
         if plant[i] > plant[i - 1]:
             dead_plant.append(plant[i])
 
       
     len_d_p = len(dead_plant)
-    print(dead_plant,len_d_p) 
+     
+
     for i in dead_plant: 
-        try: 
+        try:
             plant.remove(i) 
-        except ValueError: 
+        except ValueError:
             pass
     len_p = len(plant)
-    print(plant,len_p)
-print('2')
+    if len_p != temp:
+        days += 1
+    else:
+        break
+    print(plant, days)
+
