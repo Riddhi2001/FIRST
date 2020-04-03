@@ -2,9 +2,9 @@ n = int(input())
 plant = list(map(int,input().split()))
 count = 0
 dead_plant = []
-len_p = 1
+len_p = n
 len_d_p = 0
-temp = 1
+temp = 0
 days = 0
 while True:
    
