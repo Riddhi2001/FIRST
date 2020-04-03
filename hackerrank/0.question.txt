@@ -1,0 +1,6 @@
+Poisonous plants
+https://www.hackerrank.com/challenges/poisonous-plants/problem
+partially done
+
+Sparse Array
+https://www.hackerrank.com/challenges/sparse-arrays/problem
