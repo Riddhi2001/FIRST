@@ -4,3 +4,8 @@ partially done
 
 Sparse Array
 https://www.hackerrank.com/challenges/sparse-arrays/problem
+Solved(riddhi)
+Unsolved(tanmay)
+
+Array manipulation
+https://www.hackerrank.com/challenges/crush/problem?h_r=next-challenge&h_v=zen
