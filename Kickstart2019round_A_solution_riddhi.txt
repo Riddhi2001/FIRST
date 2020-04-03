@@ -1,8 +1,0 @@
-R, C =  map(int, input().split())
-a = [] 
-for i in range(0,R):
-    a.append(str(input()))
-print(a)
-for j in range(0,R):
-    a[j] = list(a[j])
-print(a)
