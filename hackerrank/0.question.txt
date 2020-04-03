@@ -1,6 +1,6 @@
 Poisonous plants
 https://www.hackerrank.com/challenges/poisonous-plants/problem
-partially done
+Solved but timeout by both
 
 Sparse Array
 https://www.hackerrank.com/challenges/sparse-arrays/problem
@@ -8,3 +8,4 @@ Solved by both
 
 Array manipulation
 https://www.hackerrank.com/challenges/crush/problem?h_r=next-challenge&h_v=zen
+Solved but timeout by riddhi
