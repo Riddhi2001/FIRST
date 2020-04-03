@@ -1,6 +1,5 @@
 n,m = map(int,input().split())
 
-queries = []
 array = [0] * n
 
 #print(array)
