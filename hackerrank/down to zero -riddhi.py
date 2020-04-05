@@ -7,11 +7,11 @@ for i in range(Q):
     count = 0
     while N != 0:
         factors.clear()
-        for i in range(1,N):
+        for i in range(2,N):
             
             if N%i==0:
                 factors.append(i)
-                print(factors)
+        print(factors)
         try:    
             A = max(factors)
         except:
