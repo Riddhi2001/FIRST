@@ -19,13 +19,14 @@ for i in range(Q):
         print('max factor',A)
         print('original N',N)
         if len(factors)==1:
-            N -=1
+            N -= 1
         elif A<N-1:
-            N=A
+            N = A
         else :
-            N-=1
+            N -= 1
         print('new N',N)
-        count += 1
+        if N !=0:
+            count += 1
     print(count)
 
 
