@@ -7,11 +7,10 @@ for i in range(Q):
     while N != 0:
         for i in range(1,N):
             if N%i==0:
-                
                 factors.append(i)
             A = max(factors)
         if A< N-1:
-            A = N
+            N = A
         else:
             N -=1
         count += 1
