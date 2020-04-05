@@ -2,7 +2,7 @@ Q = int(input())
 A = 0
 for i in range(Q):
     N = int(input())
-    print(N)
+
     factors=[]
     count = 0
     while N != 0:
