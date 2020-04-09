@@ -22,7 +22,7 @@ for i in range(Q):
             N -= 1
         elif A<N-1:
             N = A
-        else :
+        elif N-1<A :
             N -= 1
         print('new N',N)
         #if N !=0:
