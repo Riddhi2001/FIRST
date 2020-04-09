@@ -9,11 +9,11 @@ SPACE = " "
 
 
 #starting pattern
-SP = STAR
+SP = SHARP
 #repeating patter
 RP = STAR
 #end pattern
-EP = ''
+EP = SHARP
 
 
 #to print the frame of the pattern consisting of loop
