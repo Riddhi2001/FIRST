@@ -1,0 +1,25 @@
+from datetime import datetime, timedelta
+
+TIMELINE = {'Los Angeles': -8,'New York':-5,'Caracas': -4.5,'Buenos Aires': -3,'London':0,'Rome':1,'Moscow':3, 'Tehran':3.5,'New Delhi': 5.5,'Beijing':8,'Canberra':10}
+
+
+def  to_modifiable(dates):
+    return datetime.strptime(dates, '%B %d, %Y %H:%M')
+
+def time_difference(city_1,city_2):
+    diff=TIMELINE[city_2] - TIMELINE[city_1]
+    mins=diff*60
+    return mins
+def new_time(date_time,difference):
+    time_diff= timedelta(
+                     minutes=difference
+                     )
+    req_date_time= date_time + time_diff
+    return req_date_time
+
+
+city1,time_stamp,city2=[i for i in input().split(' ,')]
+time= to_modifiable(time_stamp)
+difference=time_difference(city1,city2)
+final_time=new_time(time,difference)
+print(final_time)
