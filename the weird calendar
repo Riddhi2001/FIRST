@@ -1,8 +1,8 @@
 import datetime
 
-TIMELINE = {'Los Angeles': '-08.00','New York':'-05.00',' Caracas': '-04.30','Buenos Aires': '-03.00', 
-'London':00.00,' Rome':01.00,'Moscow':03.00, 'Tehran':03.30,'New Delhi': 05.30,'Beijing':08.00,	   
-'Canberra':10.00}
+TIMELINE = {'Los Angeles': '-8','New York':'-5',' Caracas': '-4.5','Buenos Aires': '-3', 
+'London':'0',' Rome':'1','Moscow':'3', 'Tehran':'3.5','New Delhi': '5.3','Beijing':'8',	   
+'Canberra':'10'}
 #MONTHS
 
 def  to_modifiable(dates):
