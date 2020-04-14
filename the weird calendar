@@ -1,0 +1,29 @@
+import datetime
+
+TIMELINE = {'Los Angeles': '-08.00','New York':'-05.00',' Caracas': '-04.30','Buenos Aires': '-03.00', 
+'London':00.00,' Rome':01.00,'Moscow':03.00, 'Tehran':03.30,'New Delhi': 05.30,'Beijing':08.00,	   
+'Canberra':10.00}
+#MONTHS
+
+def  to_modifiable(dates):
+    return str(datetime.datetime.strptime(dates, '%B %d, %Y %H:%M'))
+
+def find_year(dates):
+    return to_modifiable(dates).split('-', 2)[0]
+
+def find_date(dates):
+    d = to_modifiable(dates).split('-', 2)[2]
+    return d.split(' ', 2)[0]
+
+def find_hour(dates):
+    h = to_modifiable(dates).split('-', 2)[2]
+    h = h.split(' ', 2)[1]
+    return m.split(':', 2)[0]
+
+def find_minute(dates):
+    m = to_modifiable(dates).split('-', 2)[2]
+    m = m.split(' ', 2)[1]
+    return m.split(':', 2)[1]
+
+
+print(find_year("July 21, 1983 23:01")) 
