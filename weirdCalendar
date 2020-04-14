@@ -5,13 +5,13 @@ TIMELINE = {'Los Angeles': -8,'New York':-5,'Caracas': -4.5,'Buenos Aires': -3,'
 
 
 
-def  to_modifiable(dates):
-    return datetime.strptime(dates, '%B %d, %Y %H:%M')
+def  to_format(inputdate):
+    return datetime.strptime(inputdate, '%B %d, %Y %H:%M')
 
 def time_difference(city_a, timestamp, city_b):
     delta_time = int(TIMELINE[city_a]) - int(TIMELINE[city_b])
     
-    required_time = str(to_modifiable(timestamp) + timedelta(minutes = delta_time*60))
+    required_time = str(to_format(timestamp) + timedelta(minutes = delta_time*60))
     
     return str(required_time).strip(':00')
     
