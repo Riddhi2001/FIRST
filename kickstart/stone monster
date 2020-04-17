@@ -1,0 +1,55 @@
+def ideal_stone(seconds: list , energy : list) -> int :
+    difference_list = []
+    for i in range(lines):
+        difference_list.append(abs(seconds[i] - energy[i]))
+    return difference_list.index(max(difference_list))
+seconds = [20,5,100,5]
+energy = [10,30,30,80]
+loss = [1,5,1,60]
+lines = 4
+
+def edit_attributes(seconds: list, energy: list, loss : list, id_st) :
+    
+    energy_gain = energy[id_st] 
+    time = seconds[id_st]
+    seconds.remove(seconds[id_st])
+    energy.remove(energy[id_st])
+    loss.remove(loss[id_st])
+    
+    for i in range(len(energy)):
+        energy[i] -= time*loss[i]
+
+    return [energy_gain,[seconds,energy,loss]]
+'''
+def update_energy(energy_total[0]):
+    while  
+    return
+'''
+print(ideal_stone(seconds,energy))
+
+id_st = ideal_stone(seconds, energy)
+energy_total = 
+
+ 
+print(edit_attributes(seconds,energy,loss,id_st))
+'''    
+T = int(input())
+
+for i in range(T) :
+    
+    seconds = []
+    energy = []
+    loss = []
+    lines = int(input())
+    stone_list = []
+    
+    for i in range(lines):
+        
+        S,E,L = map(int,input().split())
+        
+        seconds.append(S)
+        energy.append(E)
+        loss.append(L)
+    
+    print(str(stone_list))
+    '''
