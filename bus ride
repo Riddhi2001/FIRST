@@ -1,0 +1,22 @@
+
+T = int(input())
+
+for t in range(T):
+    day = 0
+    N,D = map(int,input().split())
+    buses = list(map(int,input().split()))
+    flag = 0
+    d = D
+    
+    for i in reversed(buses):
+
+        if d % i == 0:
+            flag += 1
+        else:
+            while True:
+                d -= 1
+                if d % i == 0:
+                    break
+    day = d
+    
+    print('case #{}: {}'.format(t + 1,day))
