@@ -1,0 +1,15 @@
+raw = '$3x^4 -7x^3 +21x +17$'
+raw = raw.strip("$")
+def format(raw):
+    superscript = {"2": "²","3":"³","4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹"}
+
+    l = len(raw)
+    for i in range(len(raw)):
+        if raw[i] == '^':
+            raw = raw[:i + 1] + str(superscript[raw[i + 1]]) + raw[i + 2:]
+            raw = raw.replace(raw[i]," ",1)
+
+            
+    return raw
+
+print(format(raw))
