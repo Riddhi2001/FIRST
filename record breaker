@@ -1,0 +1,33 @@
+T = int(input())
+
+for t in range(T):
+    days = int(input())
+    visitors = list(map(int,input().split()))
+    
+    
+    record = 0
+    
+
+    
+    for i in range (days):
+       
+        flag = 0
+        
+        x = 0
+        
+        while x <= i :
+            
+            
+            if visitors[i] > visitors[x] :
+                flag += 1
+            x += 1
+    
+        if (flag == i) and (i != days - 1):  
+            if (visitors[i] > visitors[i + 1]):
+                record += 1
+        elif flag == i:
+            record += 1
+        
+    
+           
+    print('Case #{}: {}'.format(t + 1, record))
